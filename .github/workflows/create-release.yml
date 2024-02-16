@@ -1,0 +1,24 @@
+name: Create Release Branch
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  create-release-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create branch
+        run: |
+          TAG_NAME="${{ github.event.release.tag_name }}" # Output e.g. v0.1.0
+          BRANCH_NAME=$(echo "$TAG_NAME" | sed 's/\.[0-9]*$/\.x/') # Output e.g. v0.1.x
+          git checkout -b release/$BRANCH_NAME
+          git push origin release/$BRANCH_NAME
