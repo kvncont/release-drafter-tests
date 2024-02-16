@@ -33,22 +33,22 @@ change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add
 version-resolver:
   major:
     labels:
-      - 'type: breaking'
+      - 'breaking'
   minor:
     labels:
-      - 'type: feature'
-      - 'type: enhancement'
+      - 'feature'
+      - 'enhancement'
   patch:
     labels:
-      - 'type: fix'
-      - 'type: bugfix'
-      - 'type: security'
-      - 'type: maintenance'
-      - 'type: docs'
-      - 'type: documentation'
-      - 'type: dependencies'
-      - 'type: test'
-      - 'type: chore'
+      - 'fix'
+      - 'bugfix'
+      - 'security'
+      - 'maintenance'
+      - 'docs'
+      - 'documentation'
+      - 'dependencies'
+      - 'test'
+      - 'chore'
 exclude-labels:
   - 'skip-changelog'
 autolabeler:
