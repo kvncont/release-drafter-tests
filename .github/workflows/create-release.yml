@@ -22,3 +22,6 @@ jobs:
           BRANCH_NAME=$(echo "$TAG_NAME" | sed 's/\.[0-9]*$/\.x/') # Output e.g. v0.1.x
           git checkout -b release/$BRANCH_NAME
           git push origin release/$BRANCH_NAME
+          gh release edit $TAG_NAME --target release/$BRANCH_NAME
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
