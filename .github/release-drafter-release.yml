@@ -31,4 +31,4 @@ template: |
 
   $CHANGES
 
-  For more details see the [full list of changes](https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...$NEXT_PATCH_VERSION/)
+  For more details see the [full list of changes](https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$NEXT_PATCH_VERSION/)

@@ -70,4 +70,4 @@ template: |
 
   $CHANGES
 
-  For more details see the [full list of changes](https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...$RESOLVED_VERSION/)
+  For more details see the [full list of changes](https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION/)
